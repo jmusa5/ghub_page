@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>GHub</title>
   <link rel="stylesheet" type="text/css" href="styles/main.css">
-  <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
+  <link rel="stylesheet" href="bower_components/octicons/octicons.css">
 </head>
 
 
@@ -12,19 +14,53 @@
 
   <div class="Header">
     <div class="container">
-      <a href="" class="logo"></a>
+      <a href="bower_components/octicons/octicons.ttf/octicon octicon-mark-github" class="logo"></a>
+      <div class="search">
+        <ul class="nav-left">
+          <il class="nav-item-explore">
+            <a class="nav-link" href="/explore" data-ga-click="Header, go to explore, text:explore">Explore</a>
+          </il>
+          <il class="nav-item">
+            <a class="nav-link" href="https://gist.github.com" data-ga-click="Header, go to gist, text:gist">Gist"</a>
+          </il>
+          <il class="nav-item">
+            <a class="nav-link" href="/blog" data-ga-click="Header, go to blog, text:blog">Blog"</a>
+          </il>
+          <il class="nav-item">
+            <a class="nav-link" href="https://help.github.com" data-ga-click="header, got to help, text:help">Help</a>
+          </il>
+        </ul>
+        <ul class="nav-right">
+          <li class="nav-item-dropdown"></li>
+          <li class="nav-item" id="pic"></li>
+          <li class="nav-item" id="username"></li>
+          <li class="nav-item" id="dropdown"></li>
+          <li class="nav-item" id="box"></li>
+        </ul>
+      </div>
     </div>
 
   </div>
 
+  <script type="text/template" data-template-name="repo">
+      <li>
+        <a href="<%= html_url %>"><%= name %></a>
+        <%= pushed_at %>
+        <%= language %>
+        <%= stargazers_count %>
+        <%= forks_count %>
+        <%= stargazers_url %>
+        <%= forks_url %>
+      </li>
+    </script>
 
-
-
+<!--========================= JS Broken =====================================
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script style="text/javascript" src="main.js"></script>
   <script type="text/javascript" src="token.js"></script>
   <script style="text/javascript" src="user_data.js"></script>
   <script style="text/javascript" src="repo_data.js"></script>
-  <script style="text/javascript" src="main.js"></script>
-
+   -->
   <span class="octicon octicon-microscope"></span>
 </body>
 </html>

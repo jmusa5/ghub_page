@@ -1,3 +1,4 @@
+var rawUserData =
 {
   "login": "jmusa5",
   "id": 8901818,
@@ -29,4 +30,4 @@
   "following": 17,
   "created_at": "2014-09-24T16:21:07Z",
   "updated_at": "2015-01-27T20:31:30Z"
-}
+};

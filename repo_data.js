@@ -1,5 +1,5 @@
-[
-  {
+var rawRepoData = {
+
     "id": 29310781,
     "name": "calculator",
     "full_name": "jmusa5/calculator",
@@ -868,5 +868,4 @@
     "open_issues": 0,
     "watchers": 0,
     "default_branch": "master"
-  }
-]
+  };
